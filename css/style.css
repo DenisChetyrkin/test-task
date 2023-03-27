@@ -1,0 +1,258 @@
+@font-face {
+	font-family: Exo2; 
+	src: url(../fonts/exo2_0_regular.otf); 
+}
+@font-face {
+	font-family: PT_Sans; 
+	src: url(../fonts/PT_Sans-Web-Regular.ttf); 
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	max-width: 1199px;
+	margin: auto;
+}
+/*Блок Сважитесь с нами*/
+.block_feedback_form {
+	margin-bottom: 70px;
+}
+.feedback_form {
+	background-image: url(../img/img_form.png);
+}
+.block_form {
+	background-color: #0B7572;
+	width: 550px;
+	height: 600px;
+	padding: 50px;
+}
+.form_title {
+	font-family: 'Exo2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 38px;
+	line-height: 125%;
+	color: #FFFFFF;
+	margin-bottom: 50px;
+}
+.block_form form {
+	display: flex;
+	flex-direction: column;
+}
+.block_form form textarea { 
+	line-height: 25px;
+	background-image: linear-gradient(transparent, transparent 24px, rgba(255, 255, 255, 0.2) 0px);
+	background-size: 100% 25px;
+	width: 100%;
+	height: 200px;
+	resize: none;
+	background-color: #0B7572;
+	border: 1px solid #0B7572;
+	color: #FFFFFF;
+}
+.block_form form textarea::placeholder {
+	font-family: 'PT_Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.7);
+}
+.block_form form textarea:focus {
+	outline: none;
+}
+.input-file {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	margin-bottom: 25px;
+}
+.input-file {
+	position: relative;
+	display: flex;
+}
+.input-file-btn {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	vertical-align: middle;
+	color: #fff;
+	text-align: center;
+	line-height: 22px;
+	height: 40px;
+	border: none;
+}
+.input-file-text {
+	padding: 0 10px;
+	display: inline-block;
+	font-family: 'PT_Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 125%;
+	color: #FFFFFF;
+}
+.input-file input[type=file] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+.input-file input[type=file]:disabled + .input-file-btn {
+	background-color: #eee;
+}
+.btn-submit {
+	font-family: 'PT_Sans';
+	width: 40%;
+	background-color: #fff;
+	color: #0B7572;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+}
+.btn-submit:hover {
+	cursor: pointer;
+}
+.form_img img {
+	height: 600px;
+	position: absolute;
+	object-fit: cover;
+}
+/*Блок Ваши данные*/
+.block_your_data {}
+.your_data_big_title {
+	font-family: 'Exo2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 38px;
+	line-height: 125%;
+	color: #363738;
+	margin-bottom: 50px;
+}
+.your_data {
+	background-color: #F9F9FB;
+	padding: 50px;	
+}
+.your_data_title {
+	font-family: 'Exo2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 135%;
+	color: #363738;
+	margin-bottom: 16px;	
+}
+.description_task_text {
+	font-family: 'PT_Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #363738;
+	margin-bottom: 40px;
+}
+.technical_specification_download {
+	margin-bottom: 40px;
+	display: inline-block;	
+}
+.technical_specification_download a {
+	display: flex;
+	align-items: center;
+	font-family: 'PT_Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #363738;
+}
+.technical_specification_download a img {
+	margin-right: 10px;
+}
+.button_confirm_the_information button {
+	background-color: #0B7572;
+	border-radius: 4px;
+	font-family: 'Exo2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 150%;
+	color: #FFFFFF;
+	padding: 10px;	
+	border: none;
+}
+.product_img {
+	margin-bottom: 80px;	
+}
+.product_img_items {
+	display: flex;
+}
+.product_img_item {
+	display: flex;
+	flex-direction: column;
+	margin-right: 16px;
+}
+.product_img_item img {
+	width: 175px;
+	height: 136px;
+	object-fit: cover;
+}
+.product_img_item a {
+	font-family: 'PT_Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #363738;
+}
+.product_img_item:last-child {
+	margin-right: 0;
+}
+.button_confirm_the_information button:hover {
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1199px) {
+	body {
+		padding: 0 40px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.feedback_form {
+		background-image: none;
+	}
+	.block_form {
+		width: 100%;
+	}
+	.product_img_item img {
+		max-width: 175px;
+		max-height: 136px;
+		width: 100%;
+		height: 100%;
+	}
+}
+@media screen and (max-width: 576px) {
+	body {
+		padding: 0 10px;
+	}
+	.block_form, .your_data {
+		padding: 30px;
+	}
+	.btn-submit {
+		width: 100%;
+	}
+	.form_title, .your_data_big_title {
+		font-size: 28px;
+	} 
+	.product_img_item a {
+		font-size: 12px;
+	}
+}
